@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* background-color: #c5f9b4; */
+  background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+canvas {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.27);
+  width: 800px;
+  height: 600px;
+  border: 5px solid rgb(93, 93, 93);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.navigator {
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 45px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.navigator .countdown-timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.navigator .countdown-timer .countdown-timer-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.navigator .countdown-timer .countdown-timer-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+#enemy-health {
+  background-color:rgb(255, 0, 0);
+  transition: width 0.5s ease-in-out;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#player-health {
+  background-color:rgb(0, 255, 0);
+  transition: width 0.5s ease-in-out;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* I'LL BE BACK */
